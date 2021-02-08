@@ -15,6 +15,8 @@ class ShopServiceTestSuite {
 
     @Autowired
     private ShopService shopService;
+    @Autowired
+    private OrderFacade orderFacade;
 
     @Test
     void testShopServiceSubmitOrder() {
@@ -59,9 +61,6 @@ class ShopServiceTestSuite {
             System.out.println("Access denied. User is not authenticated.");
         }
     }
-
-    @Autowired
-    private OrderFacade orderFacade;
 
     @Test
     public void testShopFacade() {

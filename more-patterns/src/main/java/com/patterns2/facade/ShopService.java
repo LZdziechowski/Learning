@@ -38,19 +38,22 @@ public class ShopService {
     }
 
     public boolean removeItem(Long orderId, Long productId) {
-        Iterator<Order> orderIterator = orders.stream()
+        Optional<Order> theOrder = orders.stream()
                 .filter(o -> o.getOrderId().equals(orderId))
-                .iterator();
-        while (orderIterator.hasNext()) {
-            Order theOrder = orderIterator.next();
-            for (int n = 0; n < theOrder.getItems().size(); n++) {
-                if (theOrder.getItems().get(n).getProductId().equals(productId)) {
-                    theOrder.getItems().remove(n);
-                    return true;
-                }
+                .findAny();
+        if (theOrder.isPresent()) {
+            Optional<Item> theItem = theOrder.get().getItems().stream()
+                    .filter(o -> o.getProductId().equals(productId))
+                    .findAny();
+            if (theItem.isPresent()) {
+                theOrder.get().getItems().remove(theItem.get());
+                return true;
+            } else {
+                return false;
             }
+        } else {
+            return false;
         }
-        return false;
     }
 
     public BigDecimal calculateValue(Long orderId) {
@@ -81,43 +84,37 @@ public class ShopService {
     }
 
     public boolean verifyOrder(Long orderId) {
-        Iterator<Order> orderIterator = orders.stream()
+        Optional<Order> theOrder = orders.stream()
                 .filter(o -> o.getOrderId().equals(orderId))
-                .iterator();
-        while (orderIterator.hasNext()) {
-            Order theOrder = orderIterator.next();
-            boolean result = theOrder.isPaid();
+                .findAny();
+        if (theOrder.isPresent()) {
+            boolean result = theOrder.get().isPaid();
             Random generator = new Random();
-            if (!theOrder.isVerified()) {
-                theOrder.setVerified(result && generator.nextBoolean());
+            if (!theOrder.get().isVerified()) {
+                theOrder.get().setVerified(result && generator.nextBoolean());
             }
-            return theOrder.isVerified();
+            return theOrder.get().isVerified();
+        } else {
+            return false;
         }
-        return false;
     }
 
     public boolean submitOrder(Long orderId) {
-        Iterator<Order> orderIterator = orders.stream()
+        Optional<Order> theOrder = orders.stream()
                 .filter(o -> o.getOrderId().equals(orderId))
-                .iterator();
-        while (orderIterator.hasNext()) {
-            Order theOrder = orderIterator.next();
-            if (theOrder.isVerified()) {
-                theOrder.setSubmitted(true);
-            }
-            return theOrder.isSubmitted();
+                .findAny();
+        if (theOrder.isPresent() && theOrder.get().isVerified()) {
+            theOrder.get().setSubmitted(true);
+            return theOrder.get().isSubmitted();
+        } else {
+            return false;
         }
-        return false;
     }
 
     public void cancelOrder(Long orderId) {
-        Iterator<Order> orderIterator = orders.stream()
+        Optional<Order> theOrder = orders.stream()
                 .filter(o -> o.getOrderId().equals(orderId))
-                .iterator();
-        while (orderIterator.hasNext()) {
-            Order theOrder = orderIterator.next();
-            orders.remove(theOrder);
-        }
+                .findAny();
+        theOrder.ifPresent(orders::remove);
     }
-
 }
