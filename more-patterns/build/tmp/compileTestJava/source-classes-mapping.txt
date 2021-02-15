@@ -1,2 +1,0 @@
-com/patterns2/TestApplication.java
- com.patterns2.TestApplication

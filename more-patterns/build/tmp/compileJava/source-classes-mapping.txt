@@ -1,2 +1,34 @@
 com/patterns2/Application.java
  com.patterns2.Application
+com/patterns2/decorator/taxiportal/MyTaxiNetworkOrderDecorator.java
+ com.patterns2.decorator.taxiportal.MyTaxiNetworkOrderDecorator
+com/patterns2/facade/api/ItemDto.java
+ com.patterns2.facade.api.ItemDto
+com/patterns2/decorator/taxiportal/AbstractTaxiOrderDecorator.java
+ com.patterns2.decorator.taxiportal.AbstractTaxiOrderDecorator
+com/patterns2/decorator/taxiportal/TaxiNetworkOrderDecorator.java
+ com.patterns2.decorator.taxiportal.TaxiNetworkOrderDecorator
+com/patterns2/facade/ProductService.java
+ com.patterns2.facade.ProductService
+com/patterns2/decorator/taxiportal/BasicTaxiOrder.java
+ com.patterns2.decorator.taxiportal.BasicTaxiOrder
+com/patterns2/facade/Authenticator.java
+ com.patterns2.facade.Authenticator
+com/patterns2/facade/api/OrderDto.java
+ com.patterns2.facade.api.OrderDto
+com/patterns2/decorator/taxiportal/ChildSeatDecorator.java
+ com.patterns2.decorator.taxiportal.ChildSeatDecorator
+com/patterns2/decorator/taxiportal/UberNetworkOrderDecorator.java
+ com.patterns2.decorator.taxiportal.UberNetworkOrderDecorator
+com/patterns2/facade/Item.java
+ com.patterns2.facade.Item
+com/patterns2/facade/api/OrderFacade.java
+ com.patterns2.facade.api.OrderFacade
+com/patterns2/facade/ShopService.java
+ com.patterns2.facade.ShopService
+com/patterns2/decorator/taxiportal/TaxiOrder.java
+ com.patterns2.decorator.taxiportal.TaxiOrder
+com/patterns2/facade/api/OrderProcessingException.java
+ com.patterns2.facade.api.OrderProcessingException
+com/patterns2/facade/Order.java
+ com.patterns2.facade.Order
