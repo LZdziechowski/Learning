@@ -82,8 +82,51 @@ class TaxiOrderTestSuite {
         theOrder = new ChildSeatDecorator(theOrder);
         theOrder = new ChildSeatDecorator((theOrder));
         //When
-        BigDecimal theCost = BigDecimal.valueOf(2.00);
+        BigDecimal theCost = theOrder.getCost();
         //Then
-        assertEquals(new BigDecimal(2.00), theCost);
+        assertEquals(BigDecimal.valueOf(29.0), theCost);
+    }
+
+    @Test
+    public void testUberWithTwoChildSeatsGetDescription() {
+        //Given
+        TaxiOrder theOrder = new BasicTaxiOrder();
+        theOrder = new UberNetworkOrderDecorator(theOrder);
+        theOrder = new ChildSeatDecorator(theOrder);
+        theOrder = new ChildSeatDecorator(theOrder);
+        //When
+        String description = theOrder.getDescription();
+        //Then
+        assertEquals("Drive a course by UberNetwork + child seat + child seat", description);
+    }
+
+    @Test
+    public void testVipTaxiWithChildSeatExpressGetCost() {
+        //Given
+        TaxiOrder theOrder = new BasicTaxiOrder();
+        theOrder = new TaxiNetworkOrderDecorator(theOrder);
+        theOrder = new ExpressDecorator(theOrder);
+        theOrder = new VipCarDecorator(theOrder);
+        theOrder = new ChildSeatDecorator(theOrder);
+        System.out.println(theOrder.getCost());
+        //When
+        BigDecimal theCost = theOrder.getCost();
+        //Then
+        assertEquals(BigDecimal.valueOf(57.0), theCost);
+    }
+
+    @Test
+    public void testVipTaxiWithChildSeatExpressGetDescription() {
+        //Given
+        TaxiOrder theOrder = new BasicTaxiOrder();
+        theOrder = new TaxiNetworkOrderDecorator(theOrder);
+        theOrder = new ExpressDecorator(theOrder);
+        theOrder = new VipCarDecorator(theOrder);
+        theOrder = new ChildSeatDecorator(theOrder);
+        System.out.println(theOrder.getDescription());
+        //When
+        String description = theOrder.getDescription();
+        //Then
+        assertEquals("Drive a course by TaxiNetwork express service variant VIP + child seat", description);
     }
 }
