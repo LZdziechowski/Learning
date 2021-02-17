@@ -6,6 +6,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.math.BigDecimal;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
@@ -54,5 +56,16 @@ public class CalculatorTestSuite {
         //Then
         LOGGER.info("Testing div method");
         assertEquals(3, result, 0);
+    }
+
+    @Test
+    void testFactorial() {
+        //Given
+        //When
+        BigDecimal result = calculator.factorial(new BigDecimal("1000"));
+        //Then
+        LOGGER.info("Testing factorial method");
+        System.out.println(result);
+        assertTrue(BigDecimal.ONE.compareTo(result) < 0);
     }
 }
