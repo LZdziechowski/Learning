@@ -74,5 +74,7 @@ class ShopServiceTestSuite {
         } catch (OrderProcessingException e) {
             // business exception - should be handled in real application
         }
+        //counter test only
+        //testShopFacade();
     }
 }
