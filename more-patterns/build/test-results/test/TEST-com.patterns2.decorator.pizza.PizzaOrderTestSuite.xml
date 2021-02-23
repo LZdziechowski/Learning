@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.patterns2.decorator.pizza.PizzaOrderTestSuite" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-02-23T09:21:56" hostname="LAPTOP-IONOIBNJ" time="0.014">
+  <properties/>
+  <testcase name="testPizzaWithCornAndHamDescription()" classname="com.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.006"/>
+  <testcase name="testPizzaWithExtraCheeseAndMushroomsDescription()" classname="com.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.004"/>
+  <testcase name="testPizzaWithExtraCheeseAndMushroomsCost()" classname="com.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.001"/>
+  <testcase name="testPizzaWithCornAndHamCost()" classname="com.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.0"/>
+  <system-out><![CDATA[Dough and tomato sauce with cheese
++ corn
++ ham
+Dough and tomato sauce with cheese
++ extra cheese
++ mushrooms
+21
+20
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

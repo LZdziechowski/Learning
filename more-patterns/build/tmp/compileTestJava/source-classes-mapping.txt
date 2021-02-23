@@ -1,0 +1,12 @@
+com/patterns2/decorator/taxiportal/TaxiOrderTestSuite.java
+ com.patterns2.decorator.taxiportal.TaxiOrderTestSuite
+com/patterns2/TestApplication.java
+ com.patterns2.TestApplication
+com/patterns2/facade/ShopServiceTestSuite.java
+ com.patterns2.facade.ShopServiceTestSuite
+com/patterns2/observer/forum/ForumTopicTestSuite.java
+ com.patterns2.observer.forum.ForumTopicTestSuite
+com/patterns2/decorator/pizza/PizzaOrderTestSuite.java
+ com.patterns2.decorator.pizza.PizzaOrderTestSuite
+com/patterns2/aop/calculator/CalculatorTestSuite.java
+ com.patterns2.aop.calculator.CalculatorTestSuite

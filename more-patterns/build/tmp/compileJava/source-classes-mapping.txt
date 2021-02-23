@@ -1,19 +1,31 @@
-com/patterns2/Application.java
- com.patterns2.Application
-com/patterns2/decorator/taxiportal/MyTaxiNetworkOrderDecorator.java
- com.patterns2.decorator.taxiportal.MyTaxiNetworkOrderDecorator
-com/patterns2/facade/api/ItemDto.java
- com.patterns2.facade.api.ItemDto
+com/patterns2/decorator/taxiportal/ExpressDecorator.java
+ com.patterns2.decorator.taxiportal.ExpressDecorator
+com/patterns2/observer/forum/JavaHelpForumTopic.java
+ com.patterns2.observer.forum.JavaHelpForumTopic
+com/patterns2/decorator/pizza/CornDecorator.java
+ com.patterns2.decorator.pizza.CornDecorator
 com/patterns2/decorator/taxiportal/AbstractTaxiOrderDecorator.java
  com.patterns2.decorator.taxiportal.AbstractTaxiOrderDecorator
 com/patterns2/decorator/taxiportal/TaxiNetworkOrderDecorator.java
  com.patterns2.decorator.taxiportal.TaxiNetworkOrderDecorator
-com/patterns2/facade/ProductService.java
- com.patterns2.facade.ProductService
+com/patterns2/decorator/pizza/BasicPizzaOrder.java
+ com.patterns2.decorator.pizza.BasicPizzaOrder
+com/patterns2/decorator/pizza/PizzaOrder.java
+ com.patterns2.decorator.pizza.PizzaOrder
+com/patterns2/decorator/pizza/HamDecorator.java
+ com.patterns2.decorator.pizza.HamDecorator
+com/patterns2/aop/calculator/Watcher.java
+ com.patterns2.aop.calculator.Watcher
 com/patterns2/decorator/taxiportal/BasicTaxiOrder.java
  com.patterns2.decorator.taxiportal.BasicTaxiOrder
-com/patterns2/facade/Authenticator.java
- com.patterns2.facade.Authenticator
+com/patterns2/decorator/taxiportal/VipCarDecorator.java
+ com.patterns2.decorator.taxiportal.VipCarDecorator
+com/patterns2/observer/homework/Student.java
+ com.patterns2.observer.homework.Student
+com/patterns2/decorator/pizza/MushroomsDecorator.java
+ com.patterns2.decorator.pizza.MushroomsDecorator
+com/patterns2/facade/WatcherFacade.java
+ com.patterns2.facade.WatcherFacade
 com/patterns2/facade/api/OrderDto.java
  com.patterns2.facade.api.OrderDto
 com/patterns2/decorator/taxiportal/ChildSeatDecorator.java
@@ -22,8 +34,14 @@ com/patterns2/decorator/taxiportal/UberNetworkOrderDecorator.java
  com.patterns2.decorator.taxiportal.UberNetworkOrderDecorator
 com/patterns2/facade/Item.java
  com.patterns2.facade.Item
+com/patterns2/observer/forum/ForumUser.java
+ com.patterns2.observer.forum.ForumUser
+com/patterns2/Application.java
+ com.patterns2.Application
 com/patterns2/facade/api/OrderFacade.java
  com.patterns2.facade.api.OrderFacade
+com/patterns2/observer/forum/Observable.java
+ com.patterns2.observer.forum.Observable
 com/patterns2/facade/ShopService.java
  com.patterns2.facade.ShopService
 com/patterns2/decorator/taxiportal/TaxiOrder.java
@@ -32,3 +50,33 @@ com/patterns2/facade/api/OrderProcessingException.java
  com.patterns2.facade.api.OrderProcessingException
 com/patterns2/facade/Order.java
  com.patterns2.facade.Order
+com/patterns2/observer/forum/Observer.java
+ com.patterns2.observer.forum.Observer
+com/patterns2/decorator/taxiportal/MyTaxiNetworkOrderDecorator.java
+ com.patterns2.decorator.taxiportal.MyTaxiNetworkOrderDecorator
+com/patterns2/facade/api/ItemDto.java
+ com.patterns2.facade.api.ItemDto
+com/patterns2/aop/calculator/Calculator.java
+ com.patterns2.aop.calculator.Calculator
+com/patterns2/facade/ProductService.java
+ com.patterns2.facade.ProductService
+com/patterns2/observer/forum/ForumTopic.java
+ com.patterns2.observer.forum.ForumTopic
+com/patterns2/decorator/pizza/ExtraCheeseDecorator.java
+ com.patterns2.decorator.pizza.ExtraCheeseDecorator
+com/patterns2/facade/Authenticator.java
+ com.patterns2.facade.Authenticator
+com/patterns2/decorator/pizza/AbstractPizzaOrderDecorator.java
+ com.patterns2.decorator.pizza.AbstractPizzaOrderDecorator
+com/patterns2/observer/forum/JavaToolsForumTopic.java
+ com.patterns2.observer.forum.JavaToolsForumTopic
+com/patterns2/observer/homework/Task.java
+ com.patterns2.observer.homework.Task
+com/patterns2/observer/homework/Mentor.java
+ com.patterns2.observer.homework.Mentor
+com/patterns2/observer/homework/Observer.java
+ com.patterns2.observer.homework.Observer
+com/patterns2/observer/homework/Observable.java
+ com.patterns2.observer.homework.Observable
+com/patterns2/observer/homework/TasksQueue.java
+ com.patterns2.observer.homework.TasksQueue

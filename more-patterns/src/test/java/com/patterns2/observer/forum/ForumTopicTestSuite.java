@@ -19,7 +19,7 @@ class ForumTopicTestSuite {
         javaHelpForum.registerObserver(jessiePinkman);
         javaToolsForum.registerObserver(jessiePinkman);
         // When
-        javaHelpForum.addPost("Hi everyoe! Could you help me with for loop?");
+        javaHelpForum.addPost("Hi everyone! Could you help me with for loop?");
         javaHelpForum.addPost("Better try to use while loop in this case.");
         javaToolsForum.addPost("Help pls, my MySQL db doesn't want to work :(");
         javaHelpForum.addPost("Why while? Is it better?");

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.patterns2.facade.ShopServiceTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-02-23T09:21:56" hostname="LAPTOP-IONOIBNJ" time="0.068">
+  <properties/>
+  <testcase name="testShopServiceSubmitOrder()" classname="com.patterns2.facade.ShopServiceTestSuite" time="0.025"/>
+  <testcase name="testShopFacade()" classname="com.patterns2.facade.ShopServiceTestSuite" time="0.042"/>
+  <system-out><![CDATA[2021-02-23 10:21:56.084  INFO 23836 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.patterns2.facade.ShopServiceTestSuite], using SpringBootContextLoader
+2021-02-23 10:21:56.086  INFO 23836 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.patterns2.facade.ShopServiceTestSuite]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-02-23 10:21:56.087  INFO 23836 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.patterns2.facade.ShopServiceTestSuite]: ShopServiceTestSuite does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-02-23 10:21:56.108  INFO 23836 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.patterns2.Application for test class com.patterns2.facade.ShopServiceTestSuite
+2021-02-23 10:21:56.112  INFO 23836 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-02-23 10:21:56.114  INFO 23836 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5d347da4, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3a54b7bc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@37db3d2a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@49d63e98, org.springframework.test.context.event.EventPublishingTestExecutionListener@3771b35b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@28870b5e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@46db5109, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3e0185b4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4501244, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@149d346b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@8527ce8]
+Registering new order, ID: 1
+Adding item: 10, 2 pcs
+Adding item: 216, 1 pc
+Adding item: 25, 1 pc
+Adding item: 100, 2.5 pcs
+Adding item: 11, 3 pcs
+Item 100 was deleted from order
+Order value is: 4599.0000 USD
+Payment was rejected
+Order cannot be submitted
+Order not submitted - cancelling
+Order is cancelled
+2021-02-23 10:21:56.152  INFO 23836 --- [    Test worker] com.patterns2.facade.WatcherFacade       : processOrder() method call number: 1
+2021-02-23 10:21:56.167  INFO 23836 --- [    Test worker] com.patterns2.facade.api.OrderFacade     : Registering new order, ID: 1
+2021-02-23 10:21:56.180  INFO 23836 --- [    Test worker] com.patterns2.facade.api.OrderFacade     : Adding item 10, 2.0 pcs
+2021-02-23 10:21:56.180  INFO 23836 --- [    Test worker] com.patterns2.facade.api.OrderFacade     : Adding item 216, 1.0 pcs
+2021-02-23 10:21:56.180  INFO 23836 --- [    Test worker] com.patterns2.facade.api.OrderFacade     : Adding item 25, 1.0 pcs
+2021-02-23 10:21:56.181  INFO 23836 --- [    Test worker] com.patterns2.facade.api.OrderFacade     : Adding item 11, 3.0 pcs
+2021-02-23 10:21:56.182  INFO 23836 --- [    Test worker] com.patterns2.facade.api.OrderFacade     : Order value is: 4719.0000 USD
+2021-02-23 10:21:56.182  INFO 23836 --- [    Test worker] com.patterns2.facade.api.OrderFacade     : Payment for order was done
+2021-02-23 10:21:56.182 ERROR 23836 --- [    Test worker] com.patterns2.facade.api.OrderFacade     : Verification error
+2021-02-23 10:21:56.183  INFO 23836 --- [    Test worker] com.patterns2.facade.api.OrderFacade     : Cancelling order 1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

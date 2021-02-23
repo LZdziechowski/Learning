@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.patterns2.observer.forum.ForumTopicTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-23T09:21:56" hostname="LAPTOP-IONOIBNJ" time="0.028">
+  <properties/>
+  <testcase name="testUpdate()" classname="com.patterns2.observer.forum.ForumTopicTestSuite" time="0.028"/>
+  <system-out><![CDATA[John Smith: New messages in topic Java Help Group
+ (total: 1 messages
+Jessie Pinkman: New messages in topic Java Help Group
+ (total: 1 messages
+John Smith: New messages in topic Java Help Group
+ (total: 2 messages
+Jessie Pinkman: New messages in topic Java Help Group
+ (total: 2 messages
+Ivone Escobar: New messages in topic Java Tools Group
+ (total: 1 messages
+Jessie Pinkman: New messages in topic Java Tools Group
+ (total: 1 messages
+John Smith: New messages in topic Java Help Group
+ (total: 3 messages
+Jessie Pinkman: New messages in topic Java Help Group
+ (total: 3 messages
+Ivone Escobar: New messages in topic Java Tools Group
+ (total: 2 messages
+Jessie Pinkman: New messages in topic Java Tools Group
+ (total: 2 messages
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

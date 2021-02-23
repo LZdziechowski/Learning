@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.patterns2.decorator.taxiportal.TaxiOrderTestSuite" tests="10" skipped="0" failures="0" errors="0" timestamp="2021-02-23T09:21:56" hostname="LAPTOP-IONOIBNJ" time="0.026">
+  <properties/>
+  <testcase name="testVipTaxiWithChildSeatExpressGetCost()" classname="com.patterns2.decorator.taxiportal.TaxiOrderTestSuite" time="0.008"/>
+  <testcase name="testTaxiNetworkOrderGetCost()" classname="com.patterns2.decorator.taxiportal.TaxiOrderTestSuite" time="0.001"/>
+  <testcase name="testMyTaxiNetworkWithChildSeatGetCost()" classname="com.patterns2.decorator.taxiportal.TaxiOrderTestSuite" time="0.002"/>
+  <testcase name="testBasicTaxiOrderGetCost()" classname="com.patterns2.decorator.taxiportal.TaxiOrderTestSuite" time="0.001"/>
+  <testcase name="testMyTaxiNetworkWithChildSeatGetDescription()" classname="com.patterns2.decorator.taxiportal.TaxiOrderTestSuite" time="0.001"/>
+  <testcase name="testVipTaxiWithChildSeatExpressGetDescription()" classname="com.patterns2.decorator.taxiportal.TaxiOrderTestSuite" time="0.002"/>
+  <testcase name="testUberNetworkWithTwoChildSeatsGetCost()" classname="com.patterns2.decorator.taxiportal.TaxiOrderTestSuite" time="0.001"/>
+  <testcase name="testTaxiNetworkOrderGetDescription()" classname="com.patterns2.decorator.taxiportal.TaxiOrderTestSuite" time="0.001"/>
+  <testcase name="testBasicTaxiOrderGetDescription()" classname="com.patterns2.decorator.taxiportal.TaxiOrderTestSuite" time="0.001"/>
+  <testcase name="testUberWithTwoChildSeatsGetDescription()" classname="com.patterns2.decorator.taxiportal.TaxiOrderTestSuite" time="0.001"/>
+  <system-out><![CDATA[57.0
+Drive a course by TaxiNetwork express service variant VIP + child seat
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
